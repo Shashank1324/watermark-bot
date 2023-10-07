@@ -31,12 +31,12 @@ Hi, I am Video Watermark Adder Bot!
 
 __Note: I can only process one video at a time. As my server is Heroku, my health is not good. If you have any issues with Adding Watermark to a Video, then please Report at [Support Group](https://t.me/).__
 
-Desgined by me
-"""
- PROGRESS = """<b>\n        
- ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ 
- ┣⪼ 📊 Percentage: {0}% 
- ┣⪼ ✅ Dᴏɴᴇ : {1} 
- ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s 
- ┣⪼ ⏰️ Eᴛᴀ: {4} 
- ╰━━━━━━━━━━━━━━━➣ </b>"""
+Desgined by @Dads_links 
+ """ 
+     PROGRESS = """<b>\n  
+  ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣  
+  ┣⪼ 📊 Percentage: {0}%  
+  ┣⪼ ✅ Dᴏɴᴇ : {1}  
+  ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s  
+  ┣⪼ ⏰️ Eᴛᴀ: {4}  
+  ╰━━━━━━━━━━━━━━━➣ </b>"""
