@@ -124,8 +124,8 @@ async def SettingsBot(bot, cmd):
 			]
 		)
 	),
-                  reply_markup=InlineKeyboardMarkup(btn), 
-parse_mode=enums.ParseMode.MARKDOWN )
+            reply_markup=InlineKeyboardMarkup(btn), 
+             parse_mode=enums.ParseMode.MARKDOWN   )               
 
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
 async def VidWatermarkAdder(bot, cmd):
