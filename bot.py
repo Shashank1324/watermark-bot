@@ -52,7 +52,9 @@ async def HelpWatermark(bot, cmd):
 	await cmd.reply_text(
 		text=Config.USAGE_WATERMARK_ADDER,
 		parse_mode="Markdown",
-		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Dads_links"), InlineKeyboardButton("Support Group", url="https://t.me/Dads_links")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Dads_links")], [InlineKeyboardButton("Source Code", url="https://github.com/Doctorstra")]]),
+reply_markup=
+
+InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Dads_links"), InlineKeyboardButton("Support Group", url="https://t.me/Dads_links")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Dads_links")], [InlineKeyboardButton("Source Code", url="https://github.com/Doctorstra")]]),
 		disable_web_page_preview=True
 	)
 
