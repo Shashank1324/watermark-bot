@@ -112,9 +112,6 @@ async def SettingsBot(bot, cmd):
 		text="Here you can set your Watermark Settings:",
 		disable_web_page_preview=True,
             
-                  parse_mode=enums.ParseMode.MARKDOWN            reply_markup=InlineKeyboardMarkup(btn),              
-   
-		
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[InlineKeyboardButton(f"Watermark Position - {position_tag}", callback_data="lol")],
@@ -127,6 +124,8 @@ async def SettingsBot(bot, cmd):
 			]
 		)
 	),
+            reply_markup=InlineKeyboardMarkup(btn), 
+             parse_mode=enums.ParseMode.MARKDOWN
             
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
 async def VidWatermarkAdder(bot, cmd):
