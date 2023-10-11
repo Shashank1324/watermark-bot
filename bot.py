@@ -17,7 +17,6 @@ import time
 import json
 import random
 import asyncio
-import markdown
 import aiohttp
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
