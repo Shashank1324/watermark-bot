@@ -5,7 +5,7 @@
 import os 
   
 class Config(object): 
-         BOT_TOKEN = os.environ.get("BOT_TOKEN","6525864792:AAHoeiRNOQmdRD4GFyRo4Ht0vZtccEOWk10") 
+         BOT_TOKEN = os.environ.get("BOT_TOKEN","6586439577:AAERjnKohzK6QBOs01WbVcSUjiY0sUwvsVk") 
          API_ID = int(os.environ.get("API_ID", "16621664")) 
          API_HASH = os.environ.get("API_HASH","8b283f2943729318995738b5963f0bcc") 
          STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "NoNeed") 
@@ -16,7 +16,7 @@ class Config(object):
          PRESET = os.environ.get("PRESET", "ultrafast") 
          OWNER_ID = int(os.environ.get("OWNER_ID", "6561715152")) 
          CAPTION = "By @Srikanth18" 
-         BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermark_Bot") 
+         BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermarkme_Bot") 
          DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Shashanklsss:shashank.ls1324@cluster0.rpvm8q5.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp") 
          BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False)) 
          ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", True))
