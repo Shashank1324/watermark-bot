@@ -50,7 +50,8 @@ async def HelpWatermark(bot, cmd):
 		if fsub == 400:
 			return
 	await cmd.reply_text(
-		text=Config.USAGE_WATERMARK_ADDER,)
+		text=Config.USAGE_WATERMARK_ADDER,
+		)
 
 
 @AHBot.on_message(filters.command(["reset"]) & filters.private)
@@ -111,7 +112,7 @@ async def SettingsBot(bot, cmd):
 	await cmd.reply_text(
 		text="Here you can set your Watermark Settings:",
 		disable_web_page_preview=True,
-            
+		parse_mode="Markdown",
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[InlineKeyboardButton(f"Watermark Position - {position_tag}", callback_data="lol")],
@@ -123,10 +124,9 @@ async def SettingsBot(bot, cmd):
 				[InlineKeyboardButton(f"Reset Settings To Default", callback_data="reset")]
 			]
 		)
-	),
- 
-parse_mode=Markdown 
-            
+	)
+
+
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
 async def VidWatermarkAdder(bot, cmd):
 	if not await db.is_user_exist(cmd.from_user.id):
