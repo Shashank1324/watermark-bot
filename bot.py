@@ -50,12 +50,7 @@ async def HelpWatermark(bot, cmd):
 		if fsub == 400:
 			return
 	await cmd.reply_text(
-		text=Config.USAGE_WATERMARK_ADDER,
-		parse_mode="markdown",
-		reply_markup=
-InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Dads_links"), InlineKeyboardButton("Support Group", url="https://t.me/Dads_links")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Dads_links")], [InlineKeyboardButton("Source Code", url="https://github.com/Doctorstra")]]),
-		disable_web_page_preview=True
-	)
+		text=Config.USAGE_WATERMARK_ADDER,)
 
 
 @AHBot.on_message(filters.command(["reset"]) & filters.private)
