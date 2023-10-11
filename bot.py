@@ -115,7 +115,7 @@ async def SettingsBot(bot, cmd):
 	await cmd.reply_text(
 		text="Here you can set your Watermark Settings:",
 		disable_web_page_preview=True,
-		parse_mode="Markdown",
+		parse_mode="commonmark",
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[InlineKeyboardButton(f"Watermark Position - {position_tag}", callback_data="lol")],
