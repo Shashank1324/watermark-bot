@@ -125,7 +125,7 @@ async def SettingsBot(bot, cmd):
 		)
 	),
  
-parse_mode=MARKDOWN
+parse_mode=Markdown 
             
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
 async def VidWatermarkAdder(bot, cmd):
