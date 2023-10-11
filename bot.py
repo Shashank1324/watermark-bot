@@ -111,7 +111,7 @@ async def SettingsBot(bot, cmd):
 	await cmd.reply_text(
 		text="Here you can set your Watermark Settings:",
 		disable_web_page_preview=True,
-		parse_mode="markdown",
+		
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[InlineKeyboardButton(f"Watermark Position - {position_tag}", callback_data="lol")],
@@ -123,7 +123,9 @@ async def SettingsBot(bot, cmd):
 				[InlineKeyboardButton(f"Reset Settings To Default", callback_data="reset")]
 			]
 		)
-	)
+	),
+             reply_markup=reply_markup, 
+             parse_mode="markdown",
 
 
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
