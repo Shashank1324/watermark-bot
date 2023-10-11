@@ -2,10 +2,9 @@
  # So Give Credits! 
   
   
- import os 
+import os 
   
-  
- class Config(object): 
+class Config(object): 
          BOT_TOKEN = os.environ.get("BOT_TOKEN","6525864792:AAHoeiRNOQmdRD4GFyRo4Ht0vZtccEOWk10") 
          API_ID = int(os.environ.get("API_ID", "16621664")) 
          API_HASH = os.environ.get("API_HASH","8b283f2943729318995738b5963f0bcc") 
