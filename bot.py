@@ -124,7 +124,7 @@ async def SettingsBot(bot, cmd):
 			]
 		)
 	),
-reply_markup=InlineKeyboardMarkup(btn), 
+reply_markup=InlineKeyboardMarkup(button), 
 parse_mode=enums.ParseMode.MARKDOWN
             
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
