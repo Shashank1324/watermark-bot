@@ -125,7 +125,7 @@ async def SettingsBot(bot, cmd):
 		)
 	),
  
-parse_mode=enums.ParseMode.MARKDOWN
+parse_mode=ParseMode.MARKDOWN
             
 @AHBot.on_message(filters.document | filters.video | filters.photo & filters.private)
 async def VidWatermarkAdder(bot, cmd):
