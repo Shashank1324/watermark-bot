@@ -17,6 +17,7 @@ import time
 import json
 import random
 import asyncio
+import markdown
 import aiohttp
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
@@ -51,7 +52,7 @@ async def HelpWatermark(bot, cmd):
 			return
 	await cmd.reply_text(
 		text=Config.USAGE_WATERMARK_ADDER,
-		parse_mode="commonmark",
+		parse_mode="markdown",
 		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Dads_links"), InlineKeyboardButton("Support Group", url="https://t.me/Dads_links")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Dads_links")], [InlineKeyboardButton("Source Code", url="https://github.com/Doctorstra")]]),
 		disable_web_page_preview=True
 	)
@@ -115,7 +116,7 @@ async def SettingsBot(bot, cmd):
 	await cmd.reply_text(
 		text="Here you can set your Watermark Settings:",
 		disable_web_page_preview=True,
-		parse_mode="commonmark",
+		parse_mode="markdown",
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[InlineKeyboardButton(f"Watermark Position - {position_tag}", callback_data="lol")],
