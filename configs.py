@@ -30,7 +30,7 @@ class Config(object):
   
  Desgined by @Dads_links 
  """ 
-        PROGRESS = """<b>\n  
+         PROGRESS = """<b>\n  
   ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣  
   ┣⪼ 📊 Percentage: {0}%  
   ┣⪼ ✅ Dᴏɴᴇ : {1}  
